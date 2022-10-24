@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey for Programmers</title>
+    </head>
+
+    <form action="/data-submission" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+
+        <div>
+            <label>
+                First name
+                <input type="text" name="first_name">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Last name
+                <input type="text" name="last_name">
+            </label>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Choose your favorite programming language:</p>
+            <div>
+                <input type="radio" id="html" name="fav_lang" value="html">
+                <label for="html">HTML</label>
+            </div>
+
+            <div>
+                <input type="radio" id="css" name="fav_lang" value="css">
+                <label for="css">CSS</label>
+            </div>
+
+            <div>
+                <input type="radio" id="javaScript" name="fav_lang" value="javaScript">
+                <label for="javaScript">JavaScript</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments"  rows="5" cols="30">Enter your comments here</textarea>
+        </div>
+
+        <div>
+            <label for="date">Current date</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <div>
+            <input type="checkbox" id="newsletter" name="subscrbe" checked>
+            <label for="newsletter">Sign up for newsletter</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="ToS" name="ToSAgree">
+            <label for="ToS">Agree to terms and conditions</label>
+        </div>
+
+        <div>
+            <input type="button" value="Submit">
+        </div>
+
+        </fieldset>
+    </form>
+</html>
